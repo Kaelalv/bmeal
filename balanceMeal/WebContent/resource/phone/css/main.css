@@ -1,0 +1,589 @@
+body { position:relative; padding:0; margin:0; font-family:"微软雅黑"; 
+list-style:none; }
+@font-face {
+	font-family: logo;
+	src: url('../res/logo.ttf');
+
+}
+@font-face {
+	font-family: theme1;
+	src: url('../res/theme1.otf');
+
+}
+
+#header { 
+	position:relative; 
+	box-sizing:border-box; 
+	height:50px; 
+	width:100%; 
+	background:#fff; 
+	padding:10px 13px;
+}
+
+/* #header .location_icon { 
+	position:absolute;
+	top:18px;
+	left:13px;
+	line-height:20px;
+	background-size:100%;
+	color:#00b034;
+	font-size:16px;
+}
+#header .location_icon i { font-size:22px; padding-right:3px; } */
+#header .logo { 
+	position:absolute; 
+	font-family:logo; 
+	font-size:20px; 
+	color:#00b034; 
+	left:13px; 
+	top:15px;  
+	font-weight:bold;
+}
+#header .logo i { 
+	padding-right:0; 
+	margin-right:0; 
+	font-size:18px; 
+	color:rgb(238,199,16); 
+	font-weight:bold;
+}
+.notify { 
+	position:absolute;
+	top:20px;
+	width:30px;
+	right:13px;
+	text-align:right;
+ 	color:#00b034; 
+ 	line-height:50px; 
+ 	font-size:20px;
+ 	outline:none;
+ }
+
+/* ----------- 导航 ------------ */
+#nav { 
+	height:50px;
+	width:100%;
+	position:fixed;
+	bottom:0;
+	left:0;
+	background:#fff;
+	font-size:12px;
+	border-top:1px solid #eee;
+	box-sizing:border-box;
+}
+#nav>div{ 
+	box-sizing:border-box;
+	float:left; 
+	width:25%; 
+	text-align:center; 
+	color:#aaa;
+}
+#nav div .nav_icon { 
+	padding:8px 0 4px;
+	font-size:18px;
+}
+.nav_active { color:#00b034!important; }
+.nav_icon_active { 
+	padding:3px 0 4px!important;
+	font-size:24px!important;
+}
+.mt36 {
+	margin-top:36px;
+}
+.main_frame_header { 
+	position:relative;
+}
+.search { 
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:100;
+	width:100%;
+	box-sizing:border-box;
+	padding:6px 15px;
+	background:rgba(250,250,250,0.5);
+	height:36px;
+}
+.search form {
+	width:100%; 
+	box-sizing:border-box;
+	background:rgba(0,0,0,.4);
+	height:24px;
+	
+	color:#aaa;
+	border-radius:12px;
+	padding-left:15px;
+}
+.search_text { 
+	width:85%;
+	height:24px;
+	line-height:24px;
+	float:left;
+	font-size:12px;
+	box-sizing:border-box;
+	text-align:center;
+	color:#fff;
+	outline:none;
+}
+.search_btn {
+    width:15%;
+	float:right;
+	box-sizing:border-box;
+	height:24px;
+	font-size:14px;
+	outline:none;
+	color:#bbb;
+	padding:0 13px 0 0;
+	border-radius:0 12px 12px 0;
+}
+
+/* main_frame */
+#banner { 
+	/*position:relative;*/
+	width:100%; 
+	height:150px; 
+}
+#banner img { width:100%;}
+#banner .banner_dot { 
+	position: absolute;
+	right:13px;
+	bottom:2px; 
+	
+}
+#banner .banner_dot span { 
+	display:inline-block; 
+	width:6px; 
+	height:6px; 
+	border-radius:50%; 
+	background:#00b034;
+}
+
+/* theme */
+.theme { 
+	width:100%;
+	clear:both;
+	box-sizing:border-box;
+	padding:15px 7px 0;
+	margin-top:25px;
+}
+.theme h3 {
+	font-size:18px; 
+	font-weight:normal; 
+	line-height:24px;
+	padding:0 6px;
+	color:#666;
+	font-family:theme1;
+}
+.theme h3 span {
+	float:right; 
+	font-size:16px; 
+	color:#aaa;
+}
+.theme h3 span i {
+	font-size:12px; 
+}
+
+
+.theme_meals .theme_meals_morning {
+	width:50%;
+	box-sizing:border-box;
+	padding:10px 6px 3px;
+	float:left;
+}
+.theme_meals .theme_meals_morning dt {
+	position:relative;
+
+}
+.theme_meals .theme_meals_morning dt img {
+	width:100%;
+	display:block;
+}
+.theme_meals .theme_meals_morning dt h5 {
+	position:absolute;
+	width:100%;
+	height:30px;
+	line-height:30px;
+	bottom:0px;
+	left:0px;
+	color:#fff;
+	background:rgba(0,0,0,.3);
+	padding-left:6px;
+	box-sizing:border-box;
+	font-size:16px;
+	font-weight:normal;
+}
+.theme_meals .theme_meals_morning dd {
+	font-size:14px;
+	padding-top:8px;
+	width:100%;
+	height:2.8em;
+	line-height:1.4em;
+	color:#444;
+
+	overflow:hidden;
+    word-break: break-all;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: -ms-box;
+    -webkit-line-clamp: 2; 
+    -moz-line-clamp: 2; 
+    -o-line-clamp: 2; 
+    -ms-line-clamp: 2;  
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -ms-box-orient: vertical;
+}
+
+
+/* --------- 今日关注 ---------- */
+.theme_meals .theme_focus { 
+	width:100%; 
+}
+
+/* --------- 食物金字塔 ---------- */
+.theme_food_pyramid { 
+	width:100%;
+	box-sizing:border-box;
+	padding:10px 6px 8px;
+	float:left;
+}
+.theme_food_pyramid dt {
+	float:left;
+	width:30%;
+}
+.theme_food_pyramid dt img {
+	width:100%;
+	display:block;
+}
+
+.theme_food_pyramid dd {
+	float:left;
+	width:70%;
+	box-sizing:border-box;
+	padding-left:15px; 
+	font-size:14px;
+	color:#555;
+	text-align:justify;
+	height:4.2em;
+	line-height:1.4em;
+
+	overflow:hidden;
+    word-break: break-all;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: -ms-box;
+    -webkit-line-clamp: 3; 
+    -moz-line-clamp: 3; 
+    -o-line-clamp: 3; 
+    -ms-line-clamp: 3;  
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -ms-box-orient: vertical;
+}
+.theme_food_pyramid dd.food_name{
+
+	height:30px;
+	line-height:30px;
+	color:#333;
+	box-sizing:border-box;
+	font-size:16px;
+	font-weight:normal;
+
+}
+.theme_food_pyramid dd span { color:red; }
+
+.loading_more { width:100%; text-align:center; padding:10px 0;}
+.loading_more span { width:20px; height:20px;  }
+
+
+/* ------ 登录 ------ */
+.login_tit { height:46px; line-height:46px; text-align:center; border-bottom:1px solid #eee;}
+
+.login { 
+	width:100%; 
+	box-sizing:border-box;
+	padding:20px 15px 0;
+}
+.login input { 
+	width:100%; 
+	box-sizing:border-box;
+	padding-left:10px;
+	border:1px solid #ddd;
+	line-height:40px;
+	margin-top:8px;
+	outline:none;
+}
+.login .login_tool { 
+	width:100%; 
+	position:relative;
+	margin-top:10px;
+	font-size:14px;
+}
+.login .login_tool input.login_password_rem{
+	width:18px;
+	height:18px;
+	
+}
+.login .login_tool label { 
+	position:absolute;
+	top:8px;
+	left: 25px;
+	display:inline-block;
+	color:#666;
+}
+.login .find_password {
+	float:right;
+	padding:8px 3px 0 0;
+	color:#666;
+	text-decoration:underline;
+}
+.login_btn {
+	display:block;
+	border:1px solid #00b034;
+	background:#00b034;
+	margin-top:20px;
+	color:#fff;
+	border-radius:4px;
+	font-size:18px;
+	box-sizing:border-box;
+	padding-left:10px;
+	border:1px solid #ddd;
+	line-height:40px;
+	margin-top:8px;
+	outline:none;
+	text-align:center;
+}
+
+.third_way { 
+	position:relative;
+	height:24px;
+	border-bottom:1px solid #ccc;
+	margin:30px 40px 0;
+}
+.third_way span { 
+	text-align:center;
+	box-sizing:border-box;
+	position:absolute;
+	display:block;
+	top:15px;
+	left:50%;
+	width:150px;
+	margin-left:-75px;
+	background:#fff;
+	padding:0 10px;
+	color:#666;
+	font-size:14px;
+}
+.third_way_icon {
+	text-align:center;
+	margin-top:30px;
+}
+.third_way_icon li {
+	font-size:28px;
+	padding:10px 10px;
+}
+.third_way_icon li.weixin {
+	color:#62b900;
+}
+.third_way_icon li.qq {
+	color:#308bc7;
+}
+.third_way_icon li.weibo {
+	color:#f61823;
+}
+
+
+
+/* 二级页 */
+/* 头 */
+#second_header { 
+	position:relative; 
+	box-sizing:border-box; 
+	width:100%; 
+	height:82px;
+	background:#fff; 
+}
+#second_header .back {
+	position:absolute;
+	width:30px;
+	outline:none;
+	top:12px;
+	left:13px;
+	text-align:left;
+	font-size:30px;
+	color:#00b034;
+}
+#second_header .second_tit {
+	position:absolute;
+	top:11px;
+	left:50%;
+	text-align:center;
+	width:100px;
+	margin-left:-50px;
+	color:#00b034;
+	line-height:40px;
+	font-size:20px;
+	font-family:theme;
+}
+#second_header .classify {
+	width:100%;
+	padding-top:20px;
+	/*height:32px;*/
+	background:#fff;
+}
+.classify li {
+	float:left;
+	width:20%;
+	box-sizing:border-box;
+	border-bottom:1px solid #eee;
+	text-align:center;
+	line-height:32px;
+	font-size:14px;
+	color:#bbb;
+}
+
+
+.classify_active {
+	color:#00b034!important;
+	font-weight:bold;
+	border-bottom:1px solid #00b034!important;
+}
+.theme_meals .recommend {
+	width:33.333333%;
+}
+.theme_meals .recommend dd {
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    overflow:hidden;
+    padding-left: 3px;
+    word-break: break-all;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: -ms-box;
+    -webkit-line-clamp:1; 
+    -moz-line-clamp: 1; 
+    -o-line-clamp: 1; 
+    -ms-line-clamp: 1;  
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -ms-box-orient: vertical;
+}
+.height50 { height:50px!important;}
+
+
+/* ---------- 均衡餐 ----------- */
+.balance_meal { 
+	position:fixed;
+	background:#fff;
+	z-index:100;
+	width:100%;
+	top:0;
+	left:0;
+	display:inline-block;
+	border-bottom:1px solid #eee;
+}
+.balance_meal li {
+	box-sizing:border-box;
+	float:left;
+	width:20%;
+	box-sizing:border-box;
+	text-align:center;
+	line-height:32px;
+	font-size:14px;
+	color:#bbb;
+}
+.balance_meal_active {
+	color:#00b034!important;
+	font-weight:bold!important;
+	font-weight:16px!important;
+}
+.balance_meal li .classify_more {
+	font-size:16px;
+	position:relative;
+}
+
+.display_none {
+	display:none;
+}
+.display_block {
+	display:block;
+}
+.visibility_h { visibility:hidden; }
+.content_margin_top { margin-top:8px; }
+
+/* ------------- 营养价值 -------------- */
+.nutrition { margin-top:20px; }
+
+.todayFocus { padding-top:5px; }
+.border_bottom { border-bottom:1px solid #eee; }
+
+.pt20 { padding-top:20px; }
+
+/* -------- message ------- */
+.message_top { height:50px!important;}
+
+/* ------------ 个人中心 ------------ */
+.bodybg { 
+	background:#f1f1f1;
+	box-sizing:border-box;
+
+	width:100%;
+	padding-top:20px;}
+.personal_info { 
+	box-sizing:border-box;
+	padding:15px 13px;
+	width:100%; 
+	height:90px;
+	background:#fff;
+}
+.personal_info dt { 
+	float:left;
+	width:20%; 
+	
+
+}
+.personal_info dt img { 
+	width:100%; 
+}
+.personal_info dd { 
+	float:left; 
+	width:80%;
+	box-sizing:border-box;
+	padding-left:20px;
+	line-height:24px;
+}
+.personal_info dd.name { 
+	padding-top:6px;
+	font-size:15px;
+	color:#444;
+}
+.personal_info dd.account { 
+	font-size:12px;
+	color:#aaa;
+}
+
+.personal_fun { 
+	box-sizing:border-box;
+	padding:6px 13px;
+	margin-top:20px; 
+	background:#fff; 
+	line-height:36px;
+}
+.personal_fun li {
+	border-bottom:1px solid #f7f7f7;
+	color:#666;
+	font-size:14px;
+}
+.personal_fun li i { 
+	padding-right:12px;
+	color:#00b034;
+}
+
+
+.borderB_none { border-bottom:none!important; }
